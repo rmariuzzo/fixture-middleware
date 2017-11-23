@@ -46,11 +46,11 @@ The following request will match those files as follows
 
  | Request | Response
  | ---     | ---
- | **URL:** `/users` <br> **Headers:** (no accept header)               | **File:** `users.html` <br> **Headers:** `content-type=text/html`
- | **URL:** `/users` <br> **Headers:** `accept=application.json`        | `users.json`           <br> **Headers:** `content-type=application/json`
- | **URL:** `/users` <br> **Headers:** `accept=application.html`        | `users.html`           <br> **Headers:** `content-type=text/html`
- | **URL:** `/users/active` <br> **Headers:** (no accept header)        | `users--active.json`   <br> **Headers:** `content-type=application/json`
- | **URL:** `/users/active` <br> **Headers:** `accept=application.json` | `users--active.json`   <br> **Headers:** `content-type=application/json`
+ | **URL:** `/users` <br> **Headers:** (no accept header)               | **File:** `users.html`
+ | **URL:** `/users` <br> **Headers:** `accept=application.json`        | **File:** `users.json`
+ | **URL:** `/users` <br> **Headers:** `accept=application.html`        | **File:** `users.html`
+ | **URL:** `/users/active` <br> **Headers:** (no accept header)        | **File:** `users--active.json`
+ | **URL:** `/users/active` <br> **Headers:** `accept=application.json` | **File:** `users--active.json`
 
 **Important:** Any unmatched request will be delegated to the next middleware.
 
@@ -71,6 +71,8 @@ The following request will match those files as follows
   1. Bump package version: `yarn version --new-version x.x.x -m 'Version %s.'`.
   2. Publish to NPM registry: `npm publish`.
   3. Push new tag: `git push origin --tags`.
+
+---
 
 <div align=center>
 

@@ -1,0 +1,27 @@
+{
+  "name": "fixture-middleware",
+  "version": "1.0.0",
+  "description": "Use fixture data in your express app!",
+  "main": "index.js",
+  "repository": "git@github.com:rmariuzzo/fixture-middleware.git",
+  "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "fs-extra": "^4.0.2",
+    "glob": "^7.1.2",
+    "mime": "^1.5.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1",
+    "express": "^4.16.2",
+    "jest": "^21.2.1",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "cross-env DEBUG=fixture-middleware jest"
+  }
+}
